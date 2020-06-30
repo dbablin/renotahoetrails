@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/renotahoetrails/static/css/main.59ee7241.chunk.css",
+    "main.js": "/renotahoetrails/static/js/main.a222fb88.chunk.js",
+    "main.js.map": "/renotahoetrails/static/js/main.a222fb88.chunk.js.map",
+    "runtime-main.js": "/renotahoetrails/static/js/runtime-main.4814c391.js",
+    "runtime-main.js.map": "/renotahoetrails/static/js/runtime-main.4814c391.js.map",
+    "static/css/2.de04c12b.chunk.css": "/renotahoetrails/static/css/2.de04c12b.chunk.css",
+    "static/js/2.d20df7a4.chunk.js": "/renotahoetrails/static/js/2.d20df7a4.chunk.js",
+    "static/js/2.d20df7a4.chunk.js.map": "/renotahoetrails/static/js/2.d20df7a4.chunk.js.map",
+    "index.html": "/renotahoetrails/index.html",
+    "precache-manifest.52cb87454d02173ccfe61acd54612e53.js": "/renotahoetrails/precache-manifest.52cb87454d02173ccfe61acd54612e53.js",
+    "service-worker.js": "/renotahoetrails/service-worker.js",
+    "static/css/2.de04c12b.chunk.css.map": "/renotahoetrails/static/css/2.de04c12b.chunk.css.map",
+    "static/css/main.59ee7241.chunk.css.map": "/renotahoetrails/static/css/main.59ee7241.chunk.css.map",
+    "static/js/2.d20df7a4.chunk.js.LICENSE.txt": "/renotahoetrails/static/js/2.d20df7a4.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.css": "/renotahoetrails/static/media/fontawesome-webfont.fee66e71.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4814c391.js",
+    "static/css/2.de04c12b.chunk.css",
+    "static/js/2.d20df7a4.chunk.js",
+    "static/css/main.59ee7241.chunk.css",
+    "static/js/main.a222fb88.chunk.js"
+  ]
+}
