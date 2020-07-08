@@ -15,7 +15,7 @@ function TrailInfo({trail}) {
                     <p><b>Traffic:</b> {trail.traffic}</p>
                     <p><b>Good for bikes?:</b> {trail.bikes}</p>
                     <p><b>Best seasons:</b> {trail.seasons}</p>
-                    <p><a href={trail.directions} target="_blank"><b>Google Maps Directions</b></a></p>
+                    <p><a href={trail.directions} target="_blank" rel="noopener noreferrer"><b>Google Maps Directions</b></a></p>
                     <p><b>Parking and entrance:</b> {trail.parkingEntrance}</p>
                     <p><b>Additional information:</b> {trail.additionalInfo}</p>
                 </CardText>

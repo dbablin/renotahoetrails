@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Header from './HeaderComponent';
 import RenderMap from './MapComponent';
-import { Switch, Route, Redirect } from 'react-router-dom'
 import Footer from './FooterComponent';
 import Trails from './TrailsComponent';
 import RenderTrail from './TrailInfoComponent';
 import { TRAILS } from '../shared/trails';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 class Main extends Component {
     constructor(props) {
@@ -15,6 +15,13 @@ class Main extends Component {
         }
     }
     render() {
+        const HomePage = () => {
+            return (
+                <RenderMap 
+                    trails={this.state.trails}
+                /> 
+            );
+        }
         const TrailWithId = ({match}) => {
             return (
                 <RenderTrail
@@ -26,7 +33,7 @@ class Main extends Component {
             <div>
                 <Header />
                 <Switch>
-                    <Route path='/home' render={() => <RenderMap trails={this.state.trails} />} />
+                    <Route path='/home' component={HomePage} />
                     <Route exact path='/trails' render={() => <Trails trails={this.state.trails} />} />
                     <Route path='/trails/:trailId' component={TrailWithId} />
                     <Redirect to='/home' />
