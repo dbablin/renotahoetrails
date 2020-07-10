@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, Container } from 'reactstrap';
+import { Navbar, Nav } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 
 class Header extends Component {
@@ -11,7 +11,7 @@ class Header extends Component {
     }
     render() {
         return (
-            <Navbar expand="md">
+            <Navbar expand="xs">
                 <Nav navbar>
                     <NavLink className="nav-link" to="/home">
                         <i className="fa fa-home fa-sm" /> RenoTahoeTrails.com
