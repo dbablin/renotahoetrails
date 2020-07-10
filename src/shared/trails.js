@@ -16,11 +16,15 @@ export const TRAILS = [
         additionalInfo: "",
         longDescription: "<p>The hike to Mount Rose Summit is an important rite of passage for anyone who lives in Reno or Tahoe. It's a full day trip, so pack accordingly. Along the way, you will meet lots of other travelers, many from out of the area. It's not for those seeking solitude, but it is one of the best views in the area.</p><p>Begin at the parking lot, perched at the highest point of Mount Rose highway, a few miles past Mount Rose ski resot if you are coming from Reno. The parking lot has a trail that starts uphill labeled the Tahoe Rim Trail; make sure to take this one and not the Tamarack Lake Trail farther down. For the first few miles, enjoy a gradual climb to the waterfall, which is the first main stopping point where many travelers take pictures.</p><p>At this point, you will continue onto the Rim-to-Rose trail. From here to the peak, the uphill slope will increase, and you will pass through many forested sections before you reach the peack, which is fully exposed. Watch out for altitude sickness as you get higher up.</p><p>Spend some time at the top to take pictures of the surrounding areas and resting from the grueling last stretch. This is one of the best views in the Sierras and certainly the best in Northern Nevada. Walk back the same way you came, taking relief in the fact that it is entirely downhill.</p>",
         photoRoll1: "/assets/images/mtrose2.jpg",
+        photoLabel1: "The last ascent",
         photoRoll2: "/assets/images/mtrose1.jpg",
+        photoLabel2: "View near the top",
         photoRoll3: "/assets/images/mtrose3.jpg",
-        photoRoll4: "/assets/images/mtrose4.jpg"
+        photoLabel3: "View from the top",
+        photoRoll4: "/assets/images/mtrose4.jpg",
+        photoLabel4: "View of the gorgeous meadow"
     },
-    {
+    {   
         id: 1,
         name: "Whites Creek to Dry Pond",
         image: "/assets/images/hikeMountRose.jpg",
@@ -37,8 +41,12 @@ export const TRAILS = [
         additionalInfo: "",
         longDescription: "",
         photoRoll1: "",
+        photoLabel1: "",
         photoRoll2: "",
+        photoLabel2: "",
         photoRoll3: "",
-        photoRoll4: ""
+        photoLabel3: "",
+        photoRoll4: "",
+        photoLabel4: ""
     }
 ];

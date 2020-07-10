@@ -1,5 +1,6 @@
-import React, { Component }  from 'react';
-import { Card, CardTitle, CardImg, CardText, CardBody, Carousel, Media, Row, Col, Container } from 'reactstrap';
+import React, { useState }  from 'react';
+import { Card, CardTitle, CardImg, CardText, CardBody, Media, Row, Col, Container } from 'reactstrap';
+import Carousel from 'react-bootstrap/Carousel';
 
 function TrailInfo({trail}) {
     return (
@@ -25,30 +26,55 @@ function TrailInfo({trail}) {
 }
 
 function TrailPhotos({trail}) {
-    return (
-        <Row>
-            <div className="col-sm-6 col-xl-3 m-0 p-0">
-                <Card>
-                    <CardImg src={trail.photoRoll1} />
-                </Card>
-            </div>
-            <div className="col-sm-6 col-xl-3 m-0 p-0">
-                <Card>
-                    <CardImg src={trail.photoRoll2} />
-                </Card>
-            </div>
-            <div className="col-sm-6 col-xl-3 m-0 p-0">
-                <Card>
-                    <CardImg src={trail.photoRoll3} />
-                </Card>
-            </div>
-            <div className="col-sm-6 col-xl-3 m-0 p-0">
-                <Card>
-                    <CardImg src={trail.photoRoll4} />
-                </Card>
-            </div>
-        </Row>
-    );
+    const [index, setIndex] = useState(0);
+
+    const handleSelect = (selectedIndex, e) => {
+        setIndex(selectedIndex);
+  };
+  return (
+    <Carousel activeIndex={index} onSelect={handleSelect}>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={trail.photoRoll1}
+          alt="First slide"
+        />
+        <Carousel.Caption>
+          <h3>{trail.photoLabel1}</h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={trail.photoRoll2}
+          alt="Second slide"
+        />
+        <Carousel.Caption>
+          <h3>{trail.photoLabel2}</h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={trail.photoRoll3}
+          alt="Third slide"
+        />
+        <Carousel.Caption>
+          <h3>{trail.photoLabel3}</h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={trail.photoRoll4}
+          alt="Third slide"
+        />
+        <Carousel.Caption>
+          <h3>{trail.photoLabel4}</h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+  );
 }
 
 function TrailDescription({trail}) {
@@ -65,7 +91,7 @@ function RenderTrail(props) {
                     <div className="col-4 p-0" >
                         <TrailInfo trail={props.trail} />
                     </div>
-                    <div className="col-8">
+                    <div className="col-6">
                         <TrailPhotos trail={props.trail} />
                         <br />
                         <TrailDescription trail={props.trail} />
