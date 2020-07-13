@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/renotahoetrails/precache-manifest.56a1aa835cab63432bf5c2786a178be9.js"
+  "/renotahoetrails/precache-manifest.31a12d2405dac24af374d2ebdbed518c.js"
 );
 
 self.addEventListener('message', (event) => {
