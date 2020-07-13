@@ -1,7 +1,7 @@
 {
   "name": "renotahoetrails",
   "version": "0.1.0",
-  "homepage": "https://dbablin.github.io/renotahoetrails",
+  "homepage": ".",
   "private": true,
   "engines": {
     "node": "12.9.0"
