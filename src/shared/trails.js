@@ -2,7 +2,6 @@ export const TRAILS = [
     {
         id: 0,
         name: "Mount Rose Summit",
-        image: "/assets/images/hikeMountRose.jpg",
         summary: "8-mile out-and-back hike to the summit of Mount Rose. A must for everyone who lives in the area. Plan for a full day.",
         distanceAndDifficulty: "8 miles. Strenuous uphill and high altitude makes it seem longer. 6+ hours round trip.",
         sunExposure: "Mix of shade throughout. Full sun at summit.",
@@ -30,7 +29,6 @@ export const TRAILS = [
     {   
         id: 1,
         name: "Whites Creek to Dry Pond",
-        image: "/assets/images/hikeMountRose.jpg",
         summary: "8-mile hike to the summit of Mount Rose. A must for everyone who lives in the area. Plan for a full day.",
         distanceAndDifficulty: "8 miles. Strenuous uphill and high altitude makes it seem longer. 6+ hours round trip.",
         sunExposure: "Mix of shade throughout. Full sun at summit.",
@@ -54,5 +52,32 @@ export const TRAILS = [
         photoLabel3: "",
         photoRoll4: "",
         photoLabel4: ""
-    }
+    },
+    {   
+        id: 2,
+        name: "Thomas Creek to Mt. Rose Wilderness",
+        summary: "8-mile hike to the summit of Mount Rose. A must for everyone who lives in the area. Plan for a full day.",
+        distanceAndDifficulty: "8 miles. Strenuous uphill and high altitude makes it seem longer. 6+ hours round trip.",
+        sunExposure: "Mix of shade throughout. Full sun at summit.",
+        traffic: "Heavy. Lots of tourists on warm days.",
+        bikes: "Not recommended.",
+        seasons: "Early fall. Crowded in summer and easy to get sunburn at the summit. Late spring is OK, but it is often cold in early spring.",
+        directions: "https://www.google.com/maps/dir//Whites+Creek+Dry+Pond+Trailhead/@39.3781439,-119.850806,16.23z/data=!4m5!3m4!1s0x80996b9092541689:0x335cbc2353832828!8m2!3d39.3780709!4d-119.8480524",
+        center: {
+            lat: 39.377925,
+            lng: -119.847967
+          },
+        zoom: 10.5,
+        parkingEntrance: "Big parking that gets full on a busy holiday. Bathrooms at the base. Only one trail entrance -- can't miss it.",
+        additionalInfo: "",
+        longDescription: "",
+        photoRoll1: "",
+        photoLabel1: "",
+        photoRoll2: "",
+        photoLabel2: "",
+        photoRoll3: "",
+        photoLabel3: "",
+        photoRoll4: "",
+        photoLabel4: ""
+    },
 ];

@@ -6,7 +6,7 @@ function RenderDirectoryItem({trail}) {
     return (
         <Card>
             <Link to={`/trails/${trail.id}`}>
-                <CardImg width="100%" src={trail.image} alt={trail.name} />
+                <CardImg width="100%" src={trail.photoRoll1} alt={trail.name} />
                 <CardImgOverlay>
                     <CardTitle>
                         <h5>{trail.name}</h5>

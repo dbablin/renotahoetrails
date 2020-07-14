@@ -4,33 +4,33 @@ import Carousel from 'react-bootstrap/Carousel';
 import GoogleMapReact from 'google-map-react'; 
 
 function TrailInfo({trail}) {
-    return (
-        <Card>
-            <CardTitle className="container m-2">
-                <h3 className="mb-0">{trail.name}</h3>
-            </CardTitle>
-            <CardBody>
-                <CardText className="ml-1">
-                    <p><b>Summary:</b> {trail.summary}</p>
-                    <p><b>Distance and difficulty:</b> {trail.distanceAndDifficulty}</p>
-                    <p><b>Sun exposure:</b> {trail.sunExposure}</p>
-                    <p><b>Traffic:</b> {trail.traffic}</p>
-                    <p><b>Good for bikes?:</b> {trail.bikes}</p>
-                    <p><b>Best seasons:</b> {trail.seasons}</p>
-                    <p><a href={trail.directions} target="_blank" rel="noopener noreferrer"><b>Google Maps Directions</b></a></p>
-                    <div style={{ height: "35vh", width: "85%" }}>
-                      <GoogleMapReact
-                        bootstrapURLKeys={{ key: 'AIzaSyBewL1YbnY2S1AMDB2ztPb7FddM_Bd-YCU' }}
-                        defaultCenter={trail.center}
-                        defaultZoom={trail.zoom}
-                      /> 
-                    </div>
-                    <p><b>Parking and entrance:</b> {trail.parkingEntrance}</p>
-                    <p><b>Additional information:</b> {trail.additionalInfo}</p>
-                </CardText>
-            </CardBody>
-        </Card>
-    );
+  return (
+      <Card>
+          <CardTitle className="container m-2">
+              <h3 className="mb-0">{trail.name}</h3>
+          </CardTitle>
+          <CardBody>
+              <CardText className="ml-1">
+                  <p><b>Summary:</b> {trail.summary}</p>
+                  <p><b>Distance and difficulty:</b> {trail.distanceAndDifficulty}</p>
+                  <p><b>Sun exposure:</b> {trail.sunExposure}</p>
+                  <p><b>Traffic:</b> {trail.traffic}</p>
+                  <p><b>Good for bikes?:</b> {trail.bikes}</p>
+                  <p><b>Best seasons:</b> {trail.seasons}</p>
+                  <p><a href={trail.directions} target="_blank" rel="noopener noreferrer"><b>Google Maps Directions</b></a></p>
+                  <div style={{ height: "35vh", width: "85%" }}>
+                    <GoogleMapReact
+                      bootstrapURLKeys={{ key: 'AIzaSyBewL1YbnY2S1AMDB2ztPb7FddM_Bd-YCU' }}
+                      defaultCenter={trail.center}
+                      defaultZoom={trail.zoom}
+                    />
+                  </div>
+                  <p><b>Parking and entrance:</b> {trail.parkingEntrance}</p>
+                  <p><b>Additional information:</b> {trail.additionalInfo}</p>
+              </CardText>
+          </CardBody>
+      </Card>
+  );
 }
 
 function TrailPhotos({trail}) {
